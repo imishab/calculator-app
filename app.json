@@ -1,0 +1,53 @@
+{
+  "expo": {
+    "name": "mycalculator",
+    "slug": "mycalculator",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "jsEngine": "hermes",
+    "minify": true,
+    "icon": "./assets/img/logo.png",
+    "scheme": "myapp",
+    "userInterfaceStyle": "automatic",
+    "newArchEnabled": true,
+    "ios": {
+      "supportsTablet": true
+    },
+    "android": {
+      "enableDangerousExperimentalLeanBuilds": true,
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/img/logo.png",
+        "backgroundColor": "#ffffff"
+      },
+      "package": "com.i.mishab.mycalculator"
+    },
+    "web": {
+      "bundler": "metro",
+      "output": "static",
+      "favicon": "./assets/img/logo.png"
+    },
+    "plugins": [
+      "expo-router",
+      [
+        "expo-splash-screen",
+        {
+          "image": "./assets/img/logo.png",
+          "imageWidth": 200,
+          "resizeMode": "contain",
+          "backgroundColor": "#ffffff"
+        }
+      ]
+    ],
+    "experiments": {
+      "typedRoutes": true
+    },
+    "extra": {
+      "router": {
+        "origin": false
+      },
+      "eas": {
+        "projectId": "10c78530-c9d6-4c29-ad1d-bf24030b7eec"
+      }
+    }
+  }
+}
